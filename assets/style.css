@@ -124,7 +124,7 @@ a {
     text-transform: uppercase;
 }
 
-/*about stylesheet*/
+/*about section stylesheet*/
 
 .about-container {
     height: 83.4rem;
@@ -185,5 +185,72 @@ a {
     justify-self: end;
     object-fit: cover;
 }
+
+/*Services section stylesheet*/
+
+.services-container {
+    height: 66rem;
+    width: 100%;
+    background-color: var(--primary-color-9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9rem 12.4rem 10rem 12.4rem;
+}
+
+.services-container h1 {
+    font-family: var(--text-font);
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: var(--alternative-color-7);
+}
+
+.container-content-services {
+    display: flex;
+}
+
+.content-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 37rem;
+    max-width: 28rem;
+    margin-right: 15.7rem;
+}
+
+.content-services:last-of-type {
+    margin-right: 0px;
+}
+
+.content-services img {
+    object-fit: cover;
+    height: 12.8rem;
+    width: 12.8rem;
+}
+
+.content-services h2 {
+    font-family: var(--alternative-font);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--alternative-color-7);
+    text-align: center;
+    margin: 1.5rem 0 1rem 0;
+    text-transform: uppercase;
+}
+
+.content-services p {
+    font-family: var(--alternative-font);
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--primary-color-2);
+    text-align: center;
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.content-services p b {
+    font-weight: 600;
+}
+
 
 
