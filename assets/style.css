@@ -1,0 +1,189 @@
+/* General Configuration */
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, p, h1, h2, ul, li {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --primary-color-1: #232323;
+    --primary-color-2: #333333;
+    --primary-color-4: #5C5C5C;
+    --primary-color-8: #C7C7C7;
+    --primary-color-9: #DEDEDE;
+    --alternative-color-2: #E8BF7D;
+    --alternative-color-4: #FF9E00;
+    --alternative-color-6: #995F00;
+    --alternative-color-7: #663F00;
+    --alternative-gradient: linear-gradient(to right, #FF9E00, #CC7E00);
+    --text-font: 'poppins', sans-serif;
+    --alternative-font: 'inika', serif;
+    --logo-font: 'orbitron', sans-serif;
+}
+
+/*Nav and page initial stylesheet*/
+
+.main-container {
+    height: 95.5rem;
+    width: 100%;
+    background-color: var(--primary-color-4);
+    background-image: url("./img/main-background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    background-attachment: fixed;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    margin: 0rem;
+    padding: 6rem 11.5rem;
+}
+
+.navbar-container span {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: var(--primary-color-1);
+    cursor: pointer;
+}
+
+.list-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-nav li {
+    font-size: 2.4rem;
+    font-family: var(--alternative-font);
+    font-weight: 400;
+    color: var(--primary-color-1);
+    margin-right: 1.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.list-nav li:last-child {
+    margin-right: 0rem;
+}
+
+.main-text {
+    position: relative;
+    top: 52rem;
+    left: 11.5rem;
+    margin: 0 15rem 0 0;
+    height: 14.1rem;
+    max-width: 82.9rem;
+}
+
+.main-text h1 {
+    font-size: 3.6rem;
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--primary-color-9);
+    text-transform: uppercase;
+}
+
+.main-text h1 b {
+    color: var(--alternative-color-4);
+}
+
+.main-text button {
+    margin-top: 3rem;
+    height: 6.2rem;
+    width: 28rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: var(--alternative-gradient);
+    color: var(--alternative-color-7);
+    font-size: 3.2rem;
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/*about stylesheet*/
+
+.about-container {
+    height: 83.4rem;
+    width: 100%;
+    background-color: var(--primary-color-1);
+    display: grid;
+    grid-template-columns: 70rem, auto;
+    grid-template-rows: 1fr 10.6rem;
+}
+
+.about-content {
+    margin: 9rem 0 0 11.5rem;
+}
+
+.about-container h1{
+    font-size: 3.6rem;
+    font-family: var(--text-font);
+    font-weight: 400;
+    color: var(--primary-color-4);
+    position: relative;
+}
+
+.about-container h1::after {
+    content: '';
+    height: 0.3rem;
+    width: 2rem;
+    background: var(--alternative-gradient);
+    margin-left: 0.6rem;
+    position: absolute;
+    top: 4rem;
+}
+
+.about-container p {
+    font-size: 2.4rem;
+    font-family: var(--text-font);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--primary-color-9);
+    height: 39.6rem;
+    width: 57.6rem;
+    margin: 4rem 0 0 0;
+}
+
+.detail-image {
+    grid-column: 1/2;
+    align-self: end;
+    margin: 0 0 1rem 1rem;
+    
+}
+
+.business-image {
+    max-width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/4;
+    max-height: 83.4rem;
+    height: auto;
+    width: 80rem;
+    justify-self: end;
+    object-fit: cover;
+}
+
+
