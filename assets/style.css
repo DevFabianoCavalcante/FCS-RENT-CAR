@@ -1,4 +1,5 @@
 /* General Configuration */
+
 *{
     box-sizing: border-box;
 }
@@ -36,6 +37,7 @@ a {
     --alternative-font: 'inika', serif;
     --logo-font: 'orbitron', sans-serif;
 }
+
 
 /*Nav and page initial stylesheet*/
 
@@ -125,6 +127,7 @@ a {
     text-transform: uppercase;
 }
 
+
 /*about section stylesheet*/
 
 .about-container {
@@ -186,6 +189,7 @@ a {
     justify-self: end;
     object-fit: cover;
 }
+
 
 /*Services section stylesheet*/
 
@@ -418,4 +422,104 @@ a {
 }
 
 
+/*Footer section stylesheet*/
+
+.footer-container {
+    position: relative;
+    height: 49.8rem;
+    width: 100%;
+    padding: 19.8rem 11.5rem 10.7rem 11.5rem;
+    background-color: var(--primary-color-1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info-contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-contact-container:nth-of-type(3) {
+    justify-self: center;
+}
+
+.info-contact-container h2 {
+    position: relative;
+    font-family: var(--text-font);
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--primary-color-4);
+    margin: 0 0 2rem 0;
+}
+
+.info-contact-container h2::before{
+    position: absolute;
+    content: '';
+    height: 1.7rem;
+    width: 0.4rem;
+    background: var(--alternative-gradient);
+    top: 1rem;
+    left: -1rem;
+}
+
+.info-contact-container span {
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary-color-9);
+    margin: 0 0 0.5rem 0;
+    cursor: pointer;
+}
+
+.info-contact-container:nth-of-type(2) span:nth-of-type(1) {
+    color: var(--alternative-color-4);
+} 
+
+.container-icons-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-contact-container img {
+    height: 3.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+}
+
+.info-contact-container img:nth-of-type(1) {
+    margin-right: 1.6rem;
+}
+
+.container-author {
+    height: 8.4rem;
+    width: 100%;
+    background: var(--alternative-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+}
+
+.container-author span {
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary-color-1);
+}
+
+.container-contact-author {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 6rem;
+}
+
+.container-contact-author img {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
 
