@@ -2,7 +2,7 @@
 
 Projeto pessoal de uma landing page com o tema de locadora de veículos, feita com HTML e CSS puro com o objetivo de revisar conceitos básicos. Inicialmente a UI desta locadora foi projetada apenas com o objetivo de práticar conceitos de UI/UX, mas por apreciar bastante o resultado, optei por codificar esta página para acrescentar ao meu repositório.
 
-## :warning: Em produção
+## :warning: Em produção (Necessário adicionar alguns detalhes de interação e responsividade - Previsão de conclusão 10/03)
 
 ### :clipboard: Pré requisitos
 
