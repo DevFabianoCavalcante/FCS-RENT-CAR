@@ -27,6 +27,7 @@ a {
     --primary-color-8: #C7C7C7;
     --primary-color-9: #DEDEDE;
     --alternative-color-2: #E8BF7D;
+    --alternative-color-3: #F0AE42;
     --alternative-color-4: #FF9E00;
     --alternative-color-6: #995F00;
     --alternative-color-7: #663F00;
@@ -322,6 +323,98 @@ a {
     width: 54.8rem;
     object-fit: cover;
     box-shadow: 1.5rem 1.5rem 0.8rem #000;
+}
+
+
+/*Opinions section stylesheet*/
+
+.opinions-container {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto,30.6rem) 1fr;
+    grid-template-rows: auto 40rem 40rem;
+    height: 95.8rem;
+    width: 100%;
+    background: var(--alternative-gradient);
+    padding: 9rem 45rem 9rem 45rem;
+}
+
+.opinions-container h1 {
+    position: relative;
+    grid-column: 2/3;
+    font-family: var(--text-font);
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: var(--alternative-color-2);
+    text-align: center;
+    height: min-content;
+}
+
+.opinions-container h1::before {
+    position: absolute;
+    content: '';
+    height: 0.2rem;
+    width: 20rem;
+    background-color: var(--alternative-color-3);
+    top: 2.6rem;
+    right: 30rem;
+}
+
+.opinions-container h1::after {
+    position: absolute;
+    content: '';
+    height: 0.2rem;
+    width: 20rem;
+    background-color: var(--alternative-color-3);
+    top: 2.6rem;
+    left: 30rem;
+}
+
+.opinion-content {
+    height: 33rem;
+    width: 34rem;
+    border-bottom: 0.2rem solid var(--alternative-color-3);
+}
+
+.opinion-content:nth-of-type(1), .opinion-content:nth-of-type(3) {
+    grid-column: 1/2;
+}
+
+.opinion-content:nth-of-type(2), .opinion-content:nth-of-type(4) {
+    grid-column: 3/4;
+    justify-self: end;
+}
+
+.opinion-content p {
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--primary-color-2);
+}
+
+.content-profile {
+    display: flex;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    height: 13rem;
+    width: 13rem;
+    margin: 1.5rem 1.5rem 3rem 0;
+}
+
+.content-profile h2 {
+    font-family: var(--text-font);
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: var(--alternative-color-6);
+    text-align: left;
+}
+
+.profile-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
