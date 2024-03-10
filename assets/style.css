@@ -2,6 +2,7 @@
 
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -33,6 +34,7 @@ a {
     --alternative-color-6: #995F00;
     --alternative-color-7: #663F00;
     --alternative-gradient: linear-gradient(to right, #FF9E00, #CC7E00);
+    --alternative-gradient-hover: linear-gradient(to right, #FF9E00, #FF9E00);
     --text-font: 'poppins', sans-serif;
     --alternative-font: 'inika', serif;
     --logo-font: 'orbitron', sans-serif;
@@ -42,7 +44,7 @@ a {
 /*Nav and page initial stylesheet*/
 
 .main-container {
-    height: 95.5rem;
+    height: 120rem;
     width: 100%;
     background-color: var(--primary-color-4);
     background-image: url("./img/main-background-image.jpg");
@@ -51,6 +53,7 @@ a {
     background-position: center;
     background-clip: border-box;
     background-attachment: fixed;
+    position: relative;
 }
 
 .navbar-container {
@@ -84,15 +87,25 @@ a {
     margin-right: 1.6rem;
     cursor: pointer;
     padding: 0.5rem;
+    transition: ease-in-out .5s;
+    border-bottom: 0.3rem solid transparent;
 }
 
 .list-nav li:last-child {
     margin-right: 0rem;
 }
 
+.list-nav li:hover {
+    border-bottom: 0.3rem solid var(--alternative-color-4);
+}
+
+.list-nav li a {
+    color: var(--primary-color-1);
+}
+
 .main-text {
-    position: relative;
-    top: 52rem;
+    position: absolute;
+    bottom: 20rem;
     left: 11.5rem;
     margin: 0 15rem 0 0;
     height: 14.1rem;
@@ -125,6 +138,11 @@ a {
     font-weight: 700;
     cursor: pointer;
     text-transform: uppercase;
+}
+
+.main-text button:hover {
+    transition: ease-in .4s;
+    border: .1rem solid var(--alternative-color-3);
 }
 
 
@@ -176,7 +194,6 @@ a {
     grid-column: 1/2;
     align-self: end;
     margin: 0 0 1rem 1rem;
-    
 }
 
 .business-image {
@@ -298,8 +315,13 @@ a {
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
-    color: var(--primary-color-9);
+    color: var(--primary-color-8);
     grid-column: 1/2;
+}
+
+.promotion-container p b {
+    color: var(--primary-color-9);
+    font-weight: 600;
 }
 
 .promotion-container button {
@@ -315,6 +337,11 @@ a {
     color: var(--alternative-color-7);
     grid-column: 1/2;
     cursor: pointer;
+}
+
+.promotion-container button:hover {
+    transition: ease-in .4s;
+    border: .1rem solid var(--alternative-color-3);
 }
 
 .promotion-container img {
@@ -336,7 +363,7 @@ a {
     display: grid;
     grid-template-columns: 1fr minmax(auto,30.6rem) 1fr;
     grid-template-rows: auto 40rem 40rem;
-    height: 95.8rem;
+    min-height: 95.8rem;
     width: 100%;
     background: var(--alternative-gradient);
     padding: 9rem 45rem 9rem 45rem;
@@ -374,9 +401,10 @@ a {
 }
 
 .opinion-content {
-    height: 33rem;
+    min-height: 33rem;
     width: 34rem;
     border-bottom: 0.2rem solid var(--alternative-color-3);
+    margin: 0 0 2rem 0;
 }
 
 .opinion-content:nth-of-type(1), .opinion-content:nth-of-type(3) {
@@ -390,7 +418,7 @@ a {
 
 .opinion-content p {
     font-family: var(--text-font);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.5;
     color: var(--primary-color-2);
@@ -471,6 +499,11 @@ a {
     cursor: pointer;
 }
 
+.info-contact-container span:hover {
+    transform: scale(1.1);
+    transition: ease-in-out .4s;
+}
+
 .info-contact-container:nth-of-type(2) span:nth-of-type(1) {
     color: var(--alternative-color-4);
 } 
@@ -507,6 +540,7 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--primary-color-1);
+    margin: 0 0 1rem 0;
 }
 
 .container-contact-author {
