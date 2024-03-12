@@ -14,13 +14,13 @@ Para a utilização é necessário somente um navegador web e conexão com a int
 
 ### :camera: Capturas de tela
 
-![Main Page](mainPage.png)
+![Main Page](./assets/img/mainPage.png)
 
-![Opinions Área](opinionArea.png)
+![Opinions Área](./assets/img/opinionArea.png)
 
-![Footer](footer.png)
+![Footer](./assets/img/footer.png)
 
-![About Area Mobile](aboutAreaMobile.png)
+![About Area Mobile](./assets/img/aboutAreaMobile.png)
 
 ### :desktop_computer: :pen: Construído com
 
