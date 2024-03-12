@@ -1,0 +1,42 @@
+/* General Configuration */
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, p, h1, h2, ul, li {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color-1);
+}
+
+:root {
+    --primary-color-1: #232323;
+    --primary-color-2: #333333;
+    --primary-color-4: #5C5C5C;
+    --primary-color-8: #C7C7C7;
+    --primary-color-9: #DEDEDE;
+    --alternative-color-2: #E8BF7D;
+    --alternative-color-3: #F0AE42;
+    --alternative-color-4: #FF9E00;
+    --alternative-color-6: #995F00;
+    --alternative-color-7: #663F00;
+    --alternative-gradient: linear-gradient(to right, #FF9E00, #CC7E00);
+    --alternative-gradient-hover: linear-gradient(to right, #FF9E00, #FF9E00);
+    --text-font: 'poppins', sans-serif;
+    --alternative-font: 'inika', serif;
+    --logo-font: 'orbitron', sans-serif;
+}

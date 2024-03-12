@@ -1,0 +1,128 @@
+/*about section stylesheet*/
+
+.about-container {
+    height: 83.4rem;
+    width: 100%;
+    background-color: var(--primary-color-1);
+    display: grid;
+    grid-template-columns: 70rem, auto;
+    grid-template-rows: 1fr 10.6rem;
+}
+
+.about-content {
+    margin: 9rem 0 0 11.5rem;
+}
+
+.about-content h1{
+    font-size: 3.6rem;
+    font-family: var(--text-font);
+    font-weight: 400;
+    color: var(--primary-color-4);
+    position: relative;
+}
+
+.about-content h1::after {
+    content: '';
+    height: 0.3rem;
+    width: 2rem;
+    background: var(--alternative-gradient);
+    margin-left: 0.6rem;
+    position: absolute;
+    top: 4rem;
+}
+
+.about-content p {
+    font-size: 2.4rem;
+    font-family: var(--text-font);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--primary-color-9);
+    height: 39.6rem;
+    width: 57.6rem;
+    margin: 4rem 0 0 0;
+}
+
+.detail-image {
+    grid-column: 1/2;
+    align-self: end;
+    margin: 0 0 1rem 1rem;
+}
+
+.business-image {
+    max-width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/4;
+    max-height: 83.4rem;
+    height: auto;
+    width: 80rem;
+    justify-self: end;
+    object-fit: cover;
+}
+
+@media (max-width: 1400px) {
+    
+    .about-container {
+        padding-top: 5rem;
+        grid-template-columns: 1fr;
+        background-image: url('./img/meet-business-image.jpg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
+        background-attachment: fixed;
+    }
+
+    .about-content {
+        margin: 9rem auto 0 auto;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.3);
+        padding: 5rem;
+        border-radius: 1rem;
+        border: transparent;
+    }
+
+    .about-container h1 {
+        color: var(--primary-color-9);
+    }
+
+    .business-image {
+        display: none;
+    }
+
+    .detail-image {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+
+    .about-container {
+        height: auto;
+    }
+
+    .about-content {
+        height: auto;
+        margin: 5rem 0 0 0;
+    }
+
+
+    .about-container h1 {
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+    .about-content p {
+        font-size: 2.4rem;
+        text-align: center;
+        height: auto;
+        width: auto;
+        margin: 4rem 0 0 0;
+    }
+}
+
+@media (max-width: 585px) {
+
+    .about-content p {
+        font-size: 1.6rem;
+    }
+}

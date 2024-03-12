@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCS RENT CAR</title>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mainStyle.css" />
+    <link rel="stylesheet" href="./assets/mainPage.css" />
+    <link rel="stylesheet" href="./assets/aboutStyle.css" />
+    <link rel="stylesheet" href="./assets/servicesStyle.css" />
+    <link rel="stylesheet" href="./assets/promotionStyle.css" />
+    <link rel="stylesheet" href="./assets/opinionsStyle.css" />
+    <link rel="stylesheet" href="./assets/footerStyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Orbitron:wght@700&family=Poppins&display=swap" rel="stylesheet">
 <body>
-    <div class="main-container">
+    <div class="main-container" id="begins-page">
         <header class="navbar-container">
-            <span>FCS RENT CAR</span>
+            <span class="option-nav"><a href="#begins-page">FCS RENT CAR</a></span>
             <nav>
+                <button type="button" id="button-menu">
+                    <img src="./assets/img/button-menu.svg" alt="button menu burguer" />
+                </button>
                 <ul class="list-nav">
-                    <li><a href="#about">SOBRE NÓS</a></li>
-                    <li><a href="#services">SERVIÇOS</a></li>
-                    <li><a href="#promotion">PROMOÇÕES</a></li>
-                    <li><a href="#opinions">DEPOIMENTOS</a></li>
-                    <li><a href="#contact">CONTATO</a></li>
+                    <li class="option-nav"><a href="#about">SOBRE NÓS</a></li>
+                    <li class="option-nav"><a href="#services">SERVIÇOS</a></li>
+                    <li class="option-nav"><a href="#promotion">PROMOÇÕES</a></li>
+                    <li class="option-nav"><a href="#opinions">DEPOIMENTOS</a></li>
+                    <li class="option-nav"><a href="#contact">CONTATO</a></li>
                 </ul>
             </nav>
         </header>
@@ -97,7 +106,7 @@
                         <img class="rating-star" src="./assets/img/icon-star.svg" alt="five stars">
                     </div>
                 </div>
-                <p>"Precisava de um carro para uma viagem de negócios de última hora e fiquei muito satisfeito com o serviço prestado. O carro estava pronto quando cheguei e o processo de devolução foi rápido e eficiente."</p>
+                <p>"Precisava de um carro para uma viagem de negócios de última hora e fiquei muito satisfeito com o serviço prestado. O carro estava pronto quando cheguei e o processo de devolução foi rápido e eficiente. Com certeza usarei novamente."</p>
             </div>
             <div class="opinion-content">
                 <div class="content-profile">
@@ -142,5 +151,7 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="./assets/script.js"></script>
 </body>
 </html>
