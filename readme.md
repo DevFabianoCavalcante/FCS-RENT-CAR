@@ -16,7 +16,7 @@ Para a utilização é necessário somente um navegador web e conexão com a int
 
 ![Main Page](mainPage.png)
 
-![Opinions Área](opinionsArea.png)
+![Opinions Área](opinionArea.png)
 
 ![Footer](footer.png)
 
