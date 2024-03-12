@@ -208,7 +208,11 @@
         }
 
         .list-nav {
+            display: flex;
+            flex-direction: column-reverse;
             padding: 0;
+            align-items: flex-end;
+            text-align: right;
         }
 
         .active-menu {

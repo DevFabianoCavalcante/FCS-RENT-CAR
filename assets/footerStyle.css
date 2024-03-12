@@ -130,6 +130,10 @@
         text-align: left;
     }
 
+    .info-contact-container h2 {
+        margin-bottom: 0.5rem;
+    }
+
     .container-author {
         height: auto;
         padding: 1.5rem;
